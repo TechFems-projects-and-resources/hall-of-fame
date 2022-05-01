@@ -1,0 +1,13 @@
+{
+  "name": "hall-of-fame",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd server && yarn nodemon",
+    "client": "cd client && yarn start",
+    "dev": "concurrently \"yarn start\" \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.1.0"
+  }
+}
