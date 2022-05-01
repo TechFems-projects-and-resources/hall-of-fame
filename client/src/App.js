@@ -1,17 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   useEffect(() => {
-    fetch('http://localhost:3001/')
-      .then(response => {
-          console.log('response success', response)
+    fetch("http://localhost:3001/")
+      .then((response) => {
+        console.log("response success", response);
       })
-      .catch(error => {
-         console.log('error', error)
+      .catch((error) => {
+        console.log("error", error);
       });
-  }, [])
+  }, []);
 
   return (
     <div className="App">
