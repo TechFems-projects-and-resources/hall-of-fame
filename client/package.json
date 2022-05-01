@@ -38,9 +38,9 @@
       "last 1 safari version"
     ]
   },
-  "engines" : {
-    "npm" : ">=7.0.0",
-    "node" : ">=16.0.0"
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
   },
   "devDependencies": {
     "eslint": "^8.14.0",
