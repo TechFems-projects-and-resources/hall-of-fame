@@ -1,29 +1,17 @@
-import { useEffect } from "react";
-import logo from "./logo.svg";
+import styled from "styled-components";
 import "./App.css";
+import Theme from "./styles/theme";
+
+const StyledDiv = styled.div`
+  color: ${(props) => props.theme.colors.primary};
+`;
 
 function App() {
-  useEffect(() => {
-    fetch("http://localhost:3001/")
-      .then((response) => {
-        console.log("response success", response);
-      })
-      .catch((error) => {
-        console.log("error", error);
-      });
-  }, []);
-
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+      <Theme>
+        <StyledDiv>Hall of Fame</StyledDiv>
+      </Theme>
     </div>
   );
 }
